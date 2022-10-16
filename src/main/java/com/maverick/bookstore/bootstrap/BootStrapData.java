@@ -5,7 +5,9 @@ import com.maverick.bookstore.domain.Book;
 import com.maverick.bookstore.repositories.AuthorRepository;
 import com.maverick.bookstore.repositories.BookRepository;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BootStrapData implements CommandLineRunner {
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
